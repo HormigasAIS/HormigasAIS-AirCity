@@ -1,0 +1,83 @@
+# 🐜 HormigasAIS AirCity — Protocolo de Autorización Soberana UTM
+
+**Fundador:** Cristhiam Leonardo Hernández Quiñonez (CLHQ)  
+**Protocolo:** LBH (Lenguaje Binario HormigasAIS) v1.1  
+**Estado:** Producción Soberana | Nodo activo en El Salvador  
+
+---
+
+## ¿Qué es HormigasAIS AirCity?
+
+Un protocolo de autorización de tráfico aéreo que no depende de servidores centrales.
+Cada dron, camión o vehículo lleva su feromona LBH firmada criptográficamente.
+El nodo local valida el ADN digital sin internet. Si el servidor cae, la soberanía persiste.
+
+---
+
+## Diccionario de Comandos LBH
+
+| Código | Nombre | Significado |
+|--------|--------|-------------|
+| `0x00` | NULL_TRAIL | Nodo en stand-by |
+| `0x01` | PULSE_HEART | Latido soberano activo |
+| `0x10` | PATH_CLEAR | Espacio aéreo despejado |
+| `0x22` | ALERT_WIND | Viento excesivo — drones en tierra |
+| `0x77` | MED_PRIORITY | Emergencia médica — prioridad absoluta |
+| `0xFF` | SOVEREIGN_LOCK | Bloqueo total — intervención manual |
+
+---
+
+## Niveles de Acceso
+
+### 🆓 Freemium — Nodo Centinela Personal
+- Un dispositivo Android con Termux
+- Protocolo LBH v1.0
+- Comandos básicos: `0x01`, `0x10`
+- Sin SLA
+- **Para:** desarrolladores, pilotos individuales
+
+### ⚡ Premium — Colonia Operativa
+- Hasta 3 nodos coordinados
+- LBH v1.1 completo — anti-replay + rotación de claves
+- Comandos completos incluyendo `0x77` emergencias médicas
+- Gateway Go con webhook HMAC-SHA256
+- Soporte via feromona XOXO
+- **Para:** flotas pequeñas, municipios, zonas industriales
+
+### 🏛️ Enterprise — Soberanía Total
+- Nodos ilimitados
+- Protocolo LBH personalizado con firma CLHQ dedicada
+- Integración con hardware de vuelo real
+- Auditoría con DOI Zenodo verificable
+- SLA soberano — sin dependencia de terceros
+- **Para:** gobiernos, aeropuertos, operadores UTM regionales
+
+---
+
+## Arquitectura
+A20s (CAPULLO_EMISOR)
+→ emite feromona BLE: "S9-DATA-IMMUNE-2026"
+→ firma LBH con HMAC-SHA256
+A16 (CENTINELA)
+→ escanea BLE cada 0.5s
+→ requiere MATCHES >= 2 (consenso anti-ruido)
+→ activa SOBERANÍA CONFIRMADA (7/7)
+Gateway Go (proto-v1)
+→ valida feromona XOXO firmada con CLHQ
+→ sincroniza la Colonia
+---
+
+## Verificación Independiente
+
+- **Wire Format:** reproducible sin hardware
+- **AES-256-GCM:** cifrado autenticado anti-tampering
+- **Suite 5/5:** anti-replay, firma falsa, mensaje expirado — todos bloqueados
+- **DOI Zenodo:** 10.5281/zenodo.17767205
+
+---
+
+## Contacto Soberano
+
+**CLHQ** — Cristhiam Leonardo Hernández Quiñonez  
+**Protocolo:** LBH v1.1 | **Nodo:** A16-Soberano-Salvador  
+**Infraestructura:** HormigasAIS Gitea Local | El Salvador 2026
