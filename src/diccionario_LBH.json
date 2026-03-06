@@ -1,0 +1,8 @@
+{
+    "0x00": ["NULL_TRAIL", "Stand-by", "Nodo activo en ahorro de energía"],
+    "0x01": ["PULSE_HEART", "Latido", "Nodo soberano vivo"],
+    "0x10": ["PATH_CLEAR", "Ruta Libre", "Espacio aéreo despejado para drones de carga"],
+    "0x22": ["ALERT_WIND", "Alerta Clima", "Viento excesivo detectado en el borde"],
+    "0x77": ["MED_PRIORITY", "Emergencia", "Prioridad absoluta para transporte de medicinas"],
+    "0xFF": ["SOVEREIGN_LOCK", "Bloqueo", "Nodo bloqueado, intervención manual requerida"]
+}
