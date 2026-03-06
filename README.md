@@ -72,7 +72,7 @@ Gateway Go (proto-v1)
 - **Wire Format:** reproducible sin hardware
 - **AES-256-GCM:** cifrado autenticado anti-tampering
 - **Suite 5/5:** anti-replay, firma falsa, mensaje expirado — todos bloqueados
-- **DOI Zenodo:** 10.5281/zenodo.17767205
+- **DOI Zenodo:** [10.5281/zenodo.17767205](https://zenodo.org/records/17767205)
 
 ---
 
