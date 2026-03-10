@@ -21,7 +21,7 @@ def dibujar_heptagono(estado, adn_status):
 while True:
     # El Centinela v2.2 lee el log que la Nube Padre está alimentando
     try:
-        with open("/data/data/com.termux/files/home/HormigasAIS-Nodo-Escuela/INCUBADORA_AIR_CITY/capullo_soberano.log", "r") as f:
+        with open("capullo_soberano.log", "r") as f:
             log_data = f.readlines()[-1] # Lee la última feromona
             
         if "S9-DATA-IMMUNE-2026" in log_data:
