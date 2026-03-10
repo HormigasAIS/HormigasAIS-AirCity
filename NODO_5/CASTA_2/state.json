@@ -1,0 +1,14 @@
+{
+  "caste_id": 2,
+  "ultimo_voto": "VALIDADO",
+  "historial_consenso": [
+    {
+      "timestamp": "2026-02-21T12:51:43-06:00",
+      "evento_migrado": "VALIDADO"
+    }
+  ],
+  "nivel_confianza": 1.00,
+  "ultima_actualizacion": "2026-02-21T12:54:48-06:00",
+  "estado_actual": "VALIDADO",
+  "checksum_integridad": "99269c8f341d2f3946027e9d0deff99c373c3b6e978cbc6d05a0b59f590169a1"
+}

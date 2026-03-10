@@ -1,0 +1,1 @@
+python3 ~/HormigasAIS-Nodo-Escuela/INCUBADORA_AIR_CITY/CENTINELA_RAPIDO_v2.3.py

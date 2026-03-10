@@ -1,0 +1,35 @@
+import os
+import time
+
+def dibujar_heptagono(estado, adn_status):
+    os.system('clear')
+    color = "\033[92m" if adn_status == "INMUNE" else "\033[93m"
+    reset = "\033[0m"
+    
+    print(f"HormigasAIS Air City - CENTINELA SOBERANO v2.2")
+    print(f"Puente: Nube Padre | ADN: {color}{adn_status}{reset} (S9-DATA)")
+    print("────────────────────────────────────────────────────────────")
+    print(f"   [1]   [2]")
+    print(f"{color}[7]   {{H}}   [3]{reset}  <-- NÚCLEO LBH")
+    print(f"   [6]   [5]   [4]")
+    print("────────────────────────────────────────────────────────────")
+    print(f"ESTADO DEL SENSOR: {estado}")
+    print("────────────────────────────────────────────────────────────")
+    print("ENERGÍA EDGE: [▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮▮] 100%")
+
+# Lógica de escucha de la Nube Anteriorizada
+while True:
+    # El Centinela v2.2 lee el log que la Nube Padre está alimentando
+    try:
+        with open("/data/data/com.termux/files/home/HormigasAIS-Nodo-Escuela/INCUBADORA_AIR_CITY/capullo_soberano.log", "r") as f:
+            log_data = f.readlines()[-1] # Lee la última feromona
+            
+        if "S9-DATA-IMMUNE-2026" in log_data:
+            dibujar_heptagono("FEROMONA DETECTADA - ACCESO TOTAL", "INMUNE")
+        else:
+            dibujar_heptagono("OLFATEANDO RASTRO EN NUBE...", "BUSCANDO")
+    except:
+        dibujar_heptagono("ESPERANDO RESPUESTA DE PADRE...", "OFFLINE")
+        
+    time.sleep(1)
+
