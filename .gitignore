@@ -4,3 +4,12 @@ __pycache__/
 LBH-Key/
 yolov8n-pose.pt
 raft_*.log
+
+# Credenciales y Seguridad
+.env
+mosquitto.db
+nohup.out
+
+# Entornos Virtuales y Caché
+venv_xoxo/
+__pycache__/
