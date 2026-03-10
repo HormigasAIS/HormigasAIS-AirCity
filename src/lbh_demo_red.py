@@ -29,7 +29,7 @@ from lbh_node_v1_1 import LBHNode
 SHARED_SECRET  = b"supersecret_shared_key_32bytes!!"
 NODE_A16       = "A16-Soberano-Salvador"
 NODE_A20S      = "A20s-Manager-Alpha"
-PUERTO         = 9000
+PUERTO         = 9001
 TIMEOUT        = 10
 
 # --- COLORES ---
