@@ -81,3 +81,10 @@ Gateway Go (proto-v1)
 **CLHQ** — Cristhiam Leonardo Hernández Quiñonez  
 **Protocolo:** LBH v1.1 | **Nodo:** A16-Soberano-Salvador  
 **Infraestructura:** HormigasAIS Gitea Local | El Salvador 2026
+
+## 🔗 Microservicio LBH
+
+| Componente | Repo | Puerto |
+|---|---|---|
+| lbh-node-service | [GitHub](https://github.com/HormigasAIS/lbh-node-service) | REST:8100 / gRPC:7100 |
+
