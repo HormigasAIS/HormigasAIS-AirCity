@@ -88,3 +88,46 @@ Gateway Go (proto-v1)
 |---|---|---|
 | lbh-node-service | [GitHub](https://github.com/HormigasAIS/lbh-node-service) | REST:8100 / gRPC:7100 |
 
+
+## 🗺️ Arquitectura del Ecosistema AirCity
+┌─────────────────────────────────────────────────────────────┐
+│              HormigasAIS AirCity — Ecosistema Soberano       │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│   CAPA FÍSICA                                                │
+│   └── CENTINELA_V24 (BLE — Heptágono 7 castas)              │
+│        │  Escaneo BLE continuo — modo ANTIFRÁGIL            │
+│        │  0x01A2B3C4|TS|SIG:hmac                            │
+│        ▼                                                     │
+│   CAPA PROTOCOLO                                             │
+│   └── cmd/bridge_centinela :9001                             │
+│        │  Valida HMAC-SHA256 → parsea LBH binario           │
+│        ▼                                                     │
+│   CAPA SERVICIO                                              │
+│   └── lbh-node-service                                       │
+│       ├── REST  :8100  → /feromona /feromonas /metrics /ping │
+│       ├── gRPC  :7100  → comunicación M2M entre nodos       │
+│       └── SQLite       → persistencia soberana local        │
+│                                                              │
+│   CAPA OBSERVABILIDAD                                        │
+│   └── /metrics → telemetría en tiempo real                  │
+│       ├── total_feromonas                                    │
+│       ├── feromonas_ultima_hora                              │
+│       ├── nodos_activos                                      │
+│       └── ultimo_ts                                          │
+│                                                              │
+│   CAPA SOBERANÍA                                             │
+│   ├── Gitea local  → HormigasAIS-Colonia-Soberana           │
+│   ├── GitHub       → github.com/HormigasAIS                 │
+│   └── Backup AES-256 → ~/HormigasAIS-Cofre-Digital/         │
+│                                                              │
+│   PILOTO OBJETIVO: Aeropuerto del Pacífico 🇸🇻 2027          │
+└─────────────────────────────────────────────────────────────┘
+| Capa | Componente | Tecnología |
+|---|---|---|
+| Física | CENTINELA_V24 | Python + BLE |
+| Protocolo | LBH-Protocol | Binario propietario |
+| Servicio | lbh-node-service | Go + Gin + gRPC |
+| Persistencia | SQLite soberano | gorm |
+| Observabilidad | /metrics | Go in-memory |
+| Soberanía | Gitea + AES-256 | Termux + Android |
