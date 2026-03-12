@@ -131,3 +131,11 @@ Gateway Go (proto-v1)
 | Persistencia | SQLite soberano | gorm |
 | Observabilidad | /metrics | Go in-memory |
 | Soberanía | Gitea + AES-256 | Termux + Android |
+
+## 📊 Evidencia de Rendimiento
+
+
+
+![Reporte de Rendimiento HormigasAIS](evidence/REPORTE_RENDIMIENTO_HORMIGASAIS.png)
+
+
