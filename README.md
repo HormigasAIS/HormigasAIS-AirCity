@@ -89,11 +89,13 @@ Gateway Go (proto-v1)
 | lbh-node-service | [GitHub](https://github.com/HormigasAIS/lbh-node-service) | REST:8100 / gRPC:7100 |
 
 
+
 ## 🗺️ Arquitectura del Ecosistema AirCity
+
+```
 ┌─────────────────────────────────────────────────────────────┐
 │              HormigasAIS AirCity — Ecosistema Soberano       │
 ├─────────────────────────────────────────────────────────────┤
-│                                                              │
 │   CAPA FÍSICA                                                │
 │   └── CENTINELA_V24 (BLE — Heptágono 7 castas)              │
 │        │  Escaneo BLE continuo — modo ANTIFRÁGIL            │
@@ -108,21 +110,17 @@ Gateway Go (proto-v1)
 │       ├── REST  :8100  → /feromona /feromonas /metrics /ping │
 │       ├── gRPC  :7100  → comunicación M2M entre nodos       │
 │       └── SQLite       → persistencia soberana local        │
-│                                                              │
 │   CAPA OBSERVABILIDAD                                        │
 │   └── /metrics → telemetría en tiempo real                  │
-│       ├── total_feromonas                                    │
-│       ├── feromonas_ultima_hora                              │
-│       ├── nodos_activos                                      │
-│       └── ultimo_ts                                          │
-│                                                              │
+│       ├── total_feromonas / feromonas_ultima_hora           │
+│       ├── nodos_activos / ultimo_ts                         │
 │   CAPA SOBERANÍA                                             │
 │   ├── Gitea local  → HormigasAIS-Colonia-Soberana           │
 │   ├── GitHub       → github.com/HormigasAIS                 │
-│   └── Backup AES-256 → ~/HormigasAIS-Cofre-Digital/         │
-│                                                              │
+│   └── Backup AES-256 → HormigasAIS-Cofre-Digital            │
 │   PILOTO OBJETIVO: Aeropuerto del Pacífico 🇸🇻 2027          │
 └─────────────────────────────────────────────────────────────┘
+```
 | Capa | Componente | Tecnología |
 |---|---|---|
 | Física | CENTINELA_V24 | Python + BLE |
