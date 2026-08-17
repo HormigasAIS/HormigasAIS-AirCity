@@ -2,15 +2,13 @@
 
 **Fundador:** Cristhiam Leonardo Hernández Quiñonez (CLHQ)  
 **Protocolo:** LBH (Lenguaje Binario HormigasAIS) v1.1  
-**Estado:** Producción Soberana | Nodo activo en El Salvador  
+**Estado:** Propuesta técnica y prototipo funcional — en fase de validación, sin despliegue en infraestructura aeroportuaria real  
 
 ---
 
 ## ¿Qué es HormigasAIS AirCity?
 
-Un protocolo de autorización de tráfico aéreo que no depende de servidores centrales.
-Cada dron, camión o vehículo lleva su feromona LBH firmada criptográficamente.
-El nodo local valida el ADN digital sin internet. Si el servidor cae, la soberanía persiste.
+Propuesta de protocolo de autorización de tráfico aéreo que no depende de servidores centrales, con prototipo funcional demostrable. Cada dron, camión o vehículo llevaría su feromona LBH firmada criptográficamente. El nodo local valida el ADN digital sin internet — diseño validado en demo de interoperabilidad entre nodos físicos, pendiente de piloto en campo.
 
 ---
 
@@ -44,13 +42,13 @@ El nodo local valida el ADN digital sin internet. Si el servidor cae, la soberan
 - Soporte via feromona XOXO
 - **Para:** flotas pequeñas, municipios, zonas industriales
 
-### 🏛️ Enterprise — Soberanía Total
-- Nodos ilimitados
+### 🏛️ Enterprise — Modelo propuesto para operadores a gran escala
+- Nodos ilimitados (diseño escalable)
 - Protocolo LBH personalizado con firma CLHQ dedicada
-- Integración con hardware de vuelo real
+- Integración con hardware de vuelo real *(fase futura, no implementada aún)*
 - Auditoría con DOI Zenodo verificable
 - SLA soberano — sin dependencia de terceros
-- **Para:** gobiernos, aeropuertos, operadores UTM regionales
+- **Para:** gobiernos, aeropuertos, operadores UTM regionales interesados en evaluar el protocolo
 
 ---
 

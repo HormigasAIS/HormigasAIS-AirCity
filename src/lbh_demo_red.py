@@ -26,7 +26,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from lbh_node_v1_1 import LBHNode
 
 # --- ADN COMPARTIDO DE LA COLONIA ---
-SHARED_SECRET  = b"supersecret_shared_key_32bytes!!"
+SHARED_SECRET  = os.environ.get("LAB_AIRCITY_SECRET", "supersecret_shared_key_32bytes-demo").encode()
 NODE_A16       = "A16-Soberano-Salvador"
 NODE_A20S      = "A20s-Manager-Alpha"
 PUERTO         = 9001

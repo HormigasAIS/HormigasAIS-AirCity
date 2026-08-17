@@ -8,13 +8,16 @@ Version: v1.2.0 | DOI: https://zenodo.org/records/17767205
 
 ## 1. Que es HormigasAIS AirCity?
 
-Sistema de gestion de trafico aereo no tripulado (UTM) basado en el
-protocolo soberano LBH (Lenguaje Binario HormigasAIS). Opera sin
-dependencia de infraestructura cloud, sobre redes mesh locales con
-comunicacion cifrada HMAC-SHA256 entre nodos fisicos.
+Propuesta y prototipo funcional de un sistema de gestion de trafico aereo
+no tripulado (UTM) basado en el protocolo soberano LBH (Lenguaje Binario
+HormigasAIS). Disenado para operar sin dependencia de infraestructura
+cloud, sobre redes mesh locales con comunicacion cifrada HMAC-SHA256
+entre nodos fisicos. Demo validada entre nodos de prueba; pendiente de
+piloto en infraestructura aeroportuaria real.
 
-Caso de uso principal: Aeropuerto del Pacifico, Conchagua La Union,
-El Salvador - apertura 2027, inversion $1,424M.
+Caso de uso propuesto: Aeropuerto del Pacifico, Conchagua La Union,
+El Salvador - apertura 2027, inversion $1,424M. (Propuesta tecnica,
+sin vinculo operativo confirmado con el proyecto.)
 
 ---
 
