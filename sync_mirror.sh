@@ -3,7 +3,7 @@
 echo "🔄 Iniciando sincronización de feromonas..."
 
 # 1. Empujar el estado al espejo institucional en GitHub
-git push --mirror github
+git push github main
 
 if [ $? -eq 0 ]; then
     echo "✅ Sincronización exitosa: El enjambre en GitHub está alineado."
